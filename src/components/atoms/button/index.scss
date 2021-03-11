@@ -1,0 +1,76 @@
+.a-button {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--type {
+    &-primary {
+      background-color: $color-dark-pink;
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-very-dark-pink;
+      }
+    }
+
+    &-primary-outline {
+      background-color: $color-white;
+      border: solid 1px $color-dark-pink;
+      color: $color-dark-pink;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-very-dark-pink;
+        border: solid 1px $color-very-dark-pink;
+      }
+    }
+
+    &-primary-gray {
+      background-color: $color-very-light-gray;
+      color: $color-dark-pink;
+
+      &:hover {
+        background-color: $color-light-gray;
+      }
+    }
+
+    &-secondary {
+      background-color: $color-navy;
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-dark-navy;
+      }
+    }
+
+    &-secondary-outline {
+      background-color: $color-white;
+      border: solid 1px $color-navy;
+      color: $color-navy;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-dark-navy;
+        border: solid 1px $color-dark-navy;
+      }
+    }
+
+    &-secondary-gray {
+      background-color: $color-very-light-gray;
+      color: $color-navy;
+
+      &:hover {
+        background-color: $color-light-gray;
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: $color-very-light-gray;
+    color: $color-gray;
+    pointer-events: none;
+  }
+}

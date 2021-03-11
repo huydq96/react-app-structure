@@ -1,0 +1,29 @@
+@mixin media-query-large-pc {
+  @media screen and (min-width: $breakpoint-large-pc) {
+    @content;
+  }
+}
+
+@mixin media-query-pc {
+  @media screen and (min-width: $breakpoint-sp) {
+    @content;
+  }
+}
+
+@mixin media-query-small-pc {
+  @media screen and (min-width: $breakpoint-sp) and (max-width: #{$breakpoint-small-pc - 1px}) {
+    @content;
+  }
+}
+
+@mixin media-query-tablet {
+  @media screen and (max-width: $breakpoint-large-pc - 1) {
+    @content;
+  }
+}
+
+@mixin media-query-sp {
+  @media screen and (max-width: #{$breakpoint-sp - 1px}) {
+    @content;
+  }
+}

@@ -1,0 +1,27 @@
+@for $i from 0 through 32 {
+  ._pt-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  ._pb-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  ._pl-#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  ._pr-#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  ._mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  ._mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  ._ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  ._mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+}

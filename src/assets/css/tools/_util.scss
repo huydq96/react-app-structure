@@ -1,0 +1,7 @@
+@mixin bg-img($img-name, $isImportant: false) {
+  $important: '';
+  @if $isImportant == true {
+    $important: '!important';
+  }
+  background-image: url('#{$path-assets-imgs}/#{$img-name}') #{$important};
+}

@@ -1,0 +1,15 @@
+.m-sample {
+  height: auto;
+  width: 25%;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: $color-very-light-gray;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  &__button {
+    padding: 5px;
+    border-radius: 4px;
+  }
+}

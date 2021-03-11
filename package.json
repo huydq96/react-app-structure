@@ -1,27 +1,22 @@
 {
-  "name": "react-ts",
+  "name": "react-app-structure",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.1",
+    "node-sass": "^4.13.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "4.0.3",
+    "typescript": "^4.2.3",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "PUBLIC_URL=/sample react-app-rewired start",
+    "build": "react-app-rewired build",
+    "lint": "eslint ./src --ext .ts --ext .tsx && yarn prettier",
+    "prettier": "prettier --check './src/**/*.{ts,tsx}'",
+    "storybook": "start-storybook -p 9009 -s build"
   },
   "browserslist": {
     "production": [
@@ -34,5 +29,49 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-backgrounds": "^5.3.18",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-info": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-storysource": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/react": "^5.3.18",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.1",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.32",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "customize-cra": "^1.0.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "prettier": "^2.0.2",
+    "react-app-rewired": "^2.1.8",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "sass-loader": "^7.1.0",
+    "webpack-bundle-analyzer": "^3.6.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
   }
 }

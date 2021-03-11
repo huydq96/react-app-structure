@@ -1,0 +1,73 @@
+.a-text {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  position: relative;
+
+  &--type {
+    &-with-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--color {
+    &-white {
+      color: $color-white;
+    }
+    &-red {
+      color: $color-red;
+    }
+    &-pink {
+      color: $color-dark-pink;
+    }
+    &-navy {
+      color: $color-navy;
+    }
+    &-gray {
+      color: $color-gray;
+    }
+    &-light-black {
+      color: $color-light-black;
+    }
+    &-black {
+      color: $color-black;
+    }
+  }
+
+  &--size {
+    @for $i from 10 through 20 {
+      &-#{$i} {
+        font-size: #{$i}px;
+      }
+    }
+    &-24 {
+      font-size: 24px;
+    }
+    &-26 {
+      font-size: 26px;
+    }
+    &-28 {
+      font-size: 28px;
+    }
+    &-36 {
+      font-size: 36px;
+    }
+    &-40 {
+      font-size: 40px;
+    }
+    &-44 {
+      font-size: 44px;
+    }
+  }
+
+  &--letter-spacing {
+    &-narrow {
+      letter-spacing: 0.04em;
+    }
+    &-regular {
+      letter-spacing: 0.08em;
+    }
+  }
+}
