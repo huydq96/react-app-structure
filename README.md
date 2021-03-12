@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# React App Directory Structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi ! Welcome here.
+This repository can be used for helping you set up folder structure for your React app.
 
-## Available Scripts
+## Technology
 
-In the project directory, you can run:
+- React v16
+- react-router v5
+- TypeScript
+- sass
+- eslint + typescript-eslint
+- Prettier
+- Storybook v5
+- EditorConfig
 
-### `npm start`
+## How can I use this ?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (>=v14)
+- yarn
 
-### `npm test`
+Commands
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+# clone this repository
+git clone git@github.com:huydq96/react-app-structure.git
+cd react-app-structure
 
-### `npm run build`
+# install necessary package
+yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# you can check if it working
+yarn start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# use storybook
+yarn storybook
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Directory Structure
 
-### `npm run eject`
+```
+/
+.
+├── public: Initial folder created by Create React App
+└── src
+	├── assets: imgs/css.
+	├── components: React components
+	├── invariables: Changeless files (eg: constant, recommend)
+	├── pages: Screen components
+	├── types: Types definitation (recommend)
+	└── utils: Utility functions
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> **_NOTE:_** I created some example files ( component, page ) with named _"sample"_. You can following it and remove when not necessary.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Reference Knowledge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Creating a ReactJS Template Series' Articles](https://dev.to/aryclenio/series/8205)
+- [React Router Architecture](https://www.ryanjyost.com/react-routing/)
+- [CSS directory structure](https://github.com/inuitcss/inuitcss#css-directory-structure)
+- [The rules for naming BEM entities](https://en.bem.info/methodology/naming-convention/#naming-rules)
